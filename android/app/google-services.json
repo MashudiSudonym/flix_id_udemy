@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "279118883702",
+    "project_id": "flix-id-5cdfd",
+    "storage_bucket": "flix-id-5cdfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279118883702:android:cdba0b522e19203401e857",
+        "android_client_info": {
+          "package_name": "id.my.masrobot.flix_id"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEvkaC8mFYIWM15sDRtC_R-DwnyZdrzaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

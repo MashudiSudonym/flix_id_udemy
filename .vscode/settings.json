@@ -1,0 +1,21 @@
+{
+    "editor.fontFamily": "'FiraCode Nerd Font Propo', 'Hack Nerd Font Propo', 'Segoe UI'",
+    "cSpell.words": [
+        "ARGB",
+        "firestore",
+        "flix",
+        "flxtp",
+        "LTRB",
+        "riverpod",
+        "Tmdb",
+        "usecase",
+        "usecases",
+        "webp"
+    ],
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+        "*.dart": "${capture}.g.dart, ${capture}.freezed.dart, ${capture}.chopper.dart"
+    },
+}
