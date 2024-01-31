@@ -4,6 +4,7 @@ import 'package:flix_id/domain/entities/result.dart';
 import 'package:flix_id/domain/entities/user.dart';
 import 'package:flix_id/domain/usecases/get_logged_in_user/get_logged_in_user.dart';
 import 'package:flix_id/domain/usecases/login/login.dart';
+import 'package:flix_id/domain/usecases/login/login_params.dart';
 import 'package:flix_id/domain/usecases/register/register.dart';
 import 'package:flix_id/domain/usecases/register/register_param.dart';
 import 'package:flix_id/domain/usecases/top_up/top_up.dart';

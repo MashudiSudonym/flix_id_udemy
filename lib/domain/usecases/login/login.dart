@@ -2,25 +2,28 @@ import 'package:flix_id/data/repositories/authentication.dart';
 import 'package:flix_id/data/repositories/user_repository.dart';
 import 'package:flix_id/domain/entities/result.dart';
 import 'package:flix_id/domain/entities/user.dart';
+import 'package:flix_id/domain/usecases/login/login_params.dart';
 import 'package:flix_id/domain/usecases/usecase.dart';
 
-part 'login_params.dart';
-
 class Login implements UseCase<Result<User>, LoginParams> {
-  final Authentication authentication;
-  final UserRepository userRepository;
+  final Authentication _authentication;
+  final UserRepository _userRepository;
 
-  Login({required this.authentication, required this.userRepository});
+  Login({
+    required Authentication authentication,
+    required UserRepository userRepository,
+  })  : _authentication = authentication,
+        _userRepository = userRepository;
 
   @override
   Future<Result<User>> call(LoginParams params) async {
-    var idResult = await authentication.login(
+    var idResult = await _authentication.login(
       email: params.email,
       password: params.password,
     );
 
     if (idResult is Success) {
-      var userResult = await userRepository.getUser(
+      var userResult = await _userRepository.getUser(
         uid: idResult.resultValue ?? '',
       );
 
